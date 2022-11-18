@@ -75,4 +75,4 @@ console.log('> existe y antes do bloco? ', y)
 * Elevação do código por baixo dos panos, este conceito é importante para entender como um código funciona por baixo dos panos sem ser declado dentro de uma variável
 
 # Declaration assigment var (declaração e atribuição de variáveis)
-* Conteúdo está em <link src='./comentarios/praticando.html'>
+* Conteúdo está em <link src='./comentarios/praticando.html'>praticando</link>
