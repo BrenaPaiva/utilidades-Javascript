@@ -2,11 +2,32 @@
      // vamos iniciar um bloco
      //var é global e local
      // var x hoisting
-     console.log('> existe x antes do bloco? ', x)
-     {     
-        // x = 0 hoisting 
-         var x = 0
+
+    //  console.log('> existe x antes do bloco? ', x)
+    //  {
+    //     // x = 0 hoisting
+    //      var x = 0
+    //     }
+    // //  hoisting - elevação do código por baixo dos panos
+    // console.log('> existe x antes do bloc?', x)
+</script>
+<script>
+    // este funcionou porque seu escopo também é do lado de fora
+    const y = 1;
+    {
+        //let e const só funcionam no escopo(caixa) em que foram criado
+        {
+            {
+                {
+                    {
+                       const y = 0
+                        console.log('> existe y? ', y)
+                    }
+                }
+            }
         }
-    //  hoisting - elevação do código por baixo dos panos
-    console.log('> existe x antes do bloc?', x)
+        2
+    }
+    console.log('> existe y depois do bloco? ', y)
+    // Imagine que o escopo é um grupinho de pessoas conversando
 </script>

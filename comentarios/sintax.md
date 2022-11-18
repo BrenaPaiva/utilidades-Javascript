@@ -38,9 +38,9 @@ Toda linguagem tem uma boa comunicação e necessita de uma boa sintaxe
 * lembrando que uma constante não pode ser alterada(Não posso atribuir vários valores nela)
 
 # Scope
-* Escopo determina a visiilidade de alguma variável no JS
+* Escopo determina a visibilidade de alguma variável no JS
 
-# Block steatement(declaração)
+## Block steatement(declaração)
 ``` js
     // vamos iniciar um bloco
     {
@@ -51,6 +51,7 @@ Toda linguagem tem uma boa comunicação e necessita de uma boa sintaxe
 O bloco, também criará um novo escopo. Chamamos de `block-scoped`
 
 ## var
+* O ideial é evitar o uso de var, por ser global seu uso pode gerar bugs inesperados
 ``` js
     //var é global e poderá funcionar fora de um escopo de bloco
     console.log('> existe x antes do bloco? ', x)
@@ -59,3 +60,19 @@ O bloco, também criará um novo escopo. Chamamos de `block-scoped`
     }
     console.log('> existe x antes do bloco', x)
 ```
+## scope da let e do const
+São locais, só serão utilizadas no escopo em que foram criadas e não tem conversa
+```js
+//const e let são locais e só funcionam no escopo onde foi criada
+console.log('> existe y antes do bloco? ', y)
+    {
+        let y = 0
+    }
+console.log('> existe y antes do bloco? ', y)
+
+```
+# O que é hoisting?
+* Elevação do código por baixo dos panos, este conceito é importante para entender como um código funciona por baixo dos panos sem ser declado dentro de uma variável
+
+# Declaration assigment var (declaração e atribuição de variáveis)
+* Conteúdo está em <link src='./comentarios/praticando.html'>
