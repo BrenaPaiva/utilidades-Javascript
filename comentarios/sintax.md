@@ -78,3 +78,5 @@ console.log('> existe y antes do bloco? ', y)
 * Conteúdo está em <link src='./comentarios/praticando.html'>praticando</link>
 
 Parei em revisão de objects no módulo praticando e avançando
+
+# Declarando variáveis
