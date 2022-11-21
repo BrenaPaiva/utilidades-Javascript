@@ -76,3 +76,5 @@ console.log('> existe y antes do bloco? ', y)
 
 # Declaration assigment var (declaração e atribuição de variáveis)
 * Conteúdo está em <link src='./comentarios/praticando.html'>praticando</link>
+
+Parei em revisão de objects no módulo praticando e avançando
