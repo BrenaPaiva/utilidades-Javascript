@@ -79,4 +79,34 @@ console.log('> existe y antes do bloco? ', y)
 
 Parei em revisão de objects no módulo praticando e avançando
 
-# Declarando variáveis
+# Functions
+* Argumentos e parâmetros
+```js
+    //função anonima
+    const sum = function(){}
+```
+
+* Retornando valores dentro de uma função
+```js
+    const sum = function(number1, number2){
+            let total = number1 + number2
+            console.log(total)
+    }
+    sum(5, 6)
+```
+## function scope
+```js
+let subject
+function createThing(subject){
+    return subject
+}
+console.log(createThink(subject))
+```
+## function hoisting
+```js
+    sayMyName()
+
+    function sayMyName(){
+        console.log('Brena')
+    }
+```
