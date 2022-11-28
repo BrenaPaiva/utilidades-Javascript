@@ -110,3 +110,95 @@ console.log(createThink(subject))
         console.log('Brena')
     }
 ```
+* Uma função que é chamada antes de ter sido criada, sofre um hoisting, por debaixo dos panos é "como se".
+
+# Arrow function
+```js
+    const sayMyName = () => {}
+```
+# Callback function(chamar de volta)
+```js
+function sayMyName (name) {
+    console.log('Antes de executar uma callback')
+    name()
+    console.log('Depois de executar uma callback')
+}
+//posso passar qualquer tipo de dado aqui dentro
+sayMyName(
+    () => {
+        console.log('Estou dentro de uma callback')
+    }
+)
+```
+* O callback é uma função que está passando como parâmetro uma outra função
+# Funções construtoras
+```js
+function person(){
+
+}
+const Brena = new person()
+console.log(Brena)
+```
+* this = vai referenciar a const que está do lado de fora
+* A prática de colocar o nome de uma função com a primeira leitra maiúscula é importante, pois o javascript já contém algumas funções construtoras
+
+# Msnipulando dados
+* Javascript também é uma linguagem baseada em protótipos
+* Antes de qualquer objeto ser criado, ele vai herdar um protótipo ascendente
+* A maioria dos dados em javascript são encapsulados por um objeto
+* O mesmo não funcionaria para números inteiros(float), mas se for números decimais, o javascript me traria uma cadeia de objetos com o __proto__
+```js
+/*
+    Prototype
+    * protoype-based language
+    * prototype chain (cadeia de protótipos)
+    * __proto__ (propriedade criada que referencia o outro objeto que é ascendente)
+
+*/
+```
+# Type conversion coersion
+```js
+    /*
+    Type conversion (typecasting) vs Type coersion
+    * Alteração de um tipo de dado para outro tipo
+    Ex:
+    */
+   console.log(Number('9')+ 5)
+
+```
+*  No console o javascript irá concatenar os valores, para não haver erro na operação. Este é o conversion
+
+# Strings e números
+* Manipular strings e números 
+* Transformar string em número e número em string
+* FUTURO EU, ESSA É BEM SIMPLES
+```js
+    let string = "123"
+    console.log(Number(string))
+    let number = 124
+    String(number)
+```
+# Contando carácteres e dígitos
+* QUERIDA EU DO FUTURO, ESSA É MAIS SIMPLES AINDA
+```js
+    let world = "paralelepipedo"
+    console.log(world.length)
+    //precisáremos converter o número que for um number
+    let number = 123
+    String(number).length 
+```
+# Casas decimais
+* Tranformar um número quebrado com duas casas decimais e trocar ponto por vírgula
+```js
+    let number = 304.304950
+    console.log(number.toFixed(2).replace(".", ","))
+    //transformando um número quebrado com duas casas decimais e trocando o "." por "/" ou qualquer outro caráctere
+```
+# Maiúsculas e minúsculas
+* Transforme as letras minúsculas em maiúsculas, faça o contrário disso também
+```js
+   //RESPOSTA
+    let word = "Programar é muito bacana"
+    document.write(word.toUpperCase())
+    document.write(word.toLowerCase())
+```

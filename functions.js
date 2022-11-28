@@ -47,8 +47,52 @@ createPhrases()
 // console.log(subject)
 
 //hoisting
-sayMyName()
+// var sayMyName
+// sayMyName()
+//  function sayMyName(){
+//     console.log('Brena')
+// }
 
-    function sayMyName(){
-        console.log('Brena')
+
+//ARROW FUNCTION
+// const sayMyName = (name) => {
+//     console.log(name)
+// }
+// sayMyName('Brena')
+
+//CALLBACK
+
+// function sayMyName (name) {
+//     console.log('Antes de executar uma callback')
+//     name()
+//     console.log('Depois de executar uma callback')
+// }
+
+// //posso passar qualquer tipo de dado aqui dentro
+// sayMyName(
+//     () => {
+//         console.log('Estou dentro de uma callback')
+//     }
+// )
+
+//Função construtora
+
+function Person(name){
+    this.name = name
+    this.walk = function(){
+        return this.name + " está andando"
     }
+}
+const brena = new Person("Brena")
+const gustavo = new Person("Gustavo")
+console.log(brena.walk())
+console.log(gustavo.walk())
+
+// transformando um número quebrado com duas casas decimais e trocando o "." por "/" ou qualquer outro caráctere
+
+let number = 304.304950
+    document.write(number.toFixed(2).replace(".", "/"))
+
+let word = "Programar é muito bacana"
+document.write(word.toUpperCase())
+document.write(word.toLowerCase())
