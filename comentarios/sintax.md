@@ -72,7 +72,7 @@ console.log('> existe y antes do bloco? ', y)
 
 ```
 # O que é hoisting?
-* Elevação do código por baixo dos panos, este conceito é importante para entender como um código funciona por baixo dos panos sem ser declado dentro de uma variável
+* Elevação do código por baixo dos panos, este conceito é importante para entender como um código funciona por baixo dos panos sem ser declarado dentro de uma variável
 
 # Declaration assigment var (declaração e atribuição de variáveis)
 * Conteúdo está em <link src='./comentarios/praticando.html'>praticando</link>
@@ -201,4 +201,22 @@ console.log(Brena)
     let word = "Programar é muito bacana"
     document.write(word.toUpperCase())
     document.write(word.toLowerCase())
+```
+# Manipulando arrays e strings
+* Separe um texto que contém espaços, em um novo array onde cada texto é uma posição do array. Depois disso
+* transforme o array em um texto e onde eram espaços coloque _
+```js
+let phrase = "Eu quero viver o amor"
+let myArray = phrase.split(" ")
+let underscore = myArray.join("/")
+console.log(underscore.toUpperCase())
+```
+# Encontrando palavras em frases
+* Método includes,eu passo como argumento o que eu quero verificar se tem ou não
+* O Includes é um case sensitive, ou seja, ele faz diferença entre maiúsculas e minúsculas.
+Ex: 
+```js
+//Método includes, verificando se tem o argumento que eu estou procurando ou não
+let frase = "Eu quero aprender a viver"
+console.log(frase.includes("viver"))
 ```

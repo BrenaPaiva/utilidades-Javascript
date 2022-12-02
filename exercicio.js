@@ -66,7 +66,23 @@
 //9. Sem rodar o código abaixo responda qual é a resposta do código abaixo e por que?
 // após sua resposta, rode o código e veja se você acertou
  
-console.log(a)
-var a = 1
+// console.log(a)
+// var a = 1
 
 // A resposta será undefined, porque a variavel não foi definida antes de ser chamada. Haverá um hoisting
+
+// EXERCICIOS
+
+// Manipulando strings e arrays
+//Separe um texto que contém espaços, em um novo array onde cada texto é uma posição do array. Depois disso
+// transforme o array em um texto e onde eram espaços coloque _
+
+let phrase = "Eu quero viver o amor"
+let myArray = phrase.split(" ")
+let underscore = myArray.join("/")
+console.log(underscore.toUpperCase())
+
+
+//Método includes, verificando se tem o argumento que eu estou procurando ou não
+let frase = "Eu quero aprender a viver"
+console.log(frase.includes("viver"))
