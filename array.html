@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //Manipulação: Criar Array com construtor
+    let myArray = new Array(26)
+    console.log(myArray)
+    //Contar elementos de um array
+    console.log(["a","b","c"].length)
+    //cada elemento de um array pode ser um tipo de dado diferente
+    console.log([
+        "a",
+        {type: "array"},
+        function(){
+            return "alo"
+        }
+        //Aqui, estou chamando o meu segundo array e entre parenteses estou querendo saber o tipo de conteúdo dentro do meu array
+    ][2]())
+</script>
+<body>
+    
+</body>
+</html>

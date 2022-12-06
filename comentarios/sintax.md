@@ -220,3 +220,4 @@ Ex:
 let frase = "Eu quero aprender a viver"
 console.log(frase.includes("viver"))
 ```
+# Criando array com construtor
