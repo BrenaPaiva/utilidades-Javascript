@@ -221,3 +221,5 @@ let frase = "Eu quero aprender a viver"
 console.log(frase.includes("viver"))
 ```
 # Criando array com construtor
+Neste tópico, eu vi a construção de um array, cadeia de arrays, manipulação do array, array como um objeto do tipo string e desencadenado ele.
+ FUTURO EU, CASO ESQUEÇA DESSE CONTEÚDO, SAIBA QUE ELE FOI MUITO FÁCIL DE APRENDER. TAVLEZ O CÓDIGO ESTEJA UM POUCO CONFUSO, MAS A LÓGICA EM SI DAR PRA ENTENDER
