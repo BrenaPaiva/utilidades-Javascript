@@ -223,3 +223,30 @@ console.log(frase.includes("viver"))
 # Criando array com construtor
 Neste tópico, eu vi a construção de um array, cadeia de arrays, manipulação do array, array como um objeto do tipo string e desencadenado ele.
  FUTURO EU, CASO ESQUEÇA DESSE CONTEÚDO, SAIBA QUE ELE FOI MUITO FÁCIL DE APRENDER. TAVLEZ O CÓDIGO ESTEJA UM POUCO CONFUSO, MAS A LÓGICA EM SI DAR PRA ENTENDER
+
+# Condição em que a falta do ; faria diferença no javascript
+```js
+//Essa é uma expressão
+    let number = 1;
+(function(){
+    //O que ele entender por baixo dos panos é que ele está querendo é executar number 1, passar uma função como argumento e ele vai receber de volta uma outra função, por isso daria erro sem o ponto e vírgula(;) na minha variavel
+    console.log('alo')
+})()
+
+/*Operadores
+* Binary
+* Unary
+* Ternary
+*/
+
+//Binary
+let number = 1
+console.log(number + 1)
+//Unary
+let number = 1
+console.log(++number)
+//Ternary
+let number = 1
+//único caso em que tenho 3 expressões para que se defina alguma coisa no final das contas
+console.log( true ? 'alo' : 'nada')
+```

@@ -23,3 +23,9 @@ console.log(animals)
 //Acessando uma propriedade de objeto dentro de um array
 console.log(animals[0].name)
 
+// Condição em que a falta do ; faria diferença no javascript
+let number = 1;
+(function(){
+    //O que ele entender por baixo dos panos é que ele está querendo é executar number 1, passar uma função como argumento e ele vai receber de volta uma outra função, por isso daria erro sem o ponto e vírgula(;) na minha variavel
+    console.log('alo')
+})()
