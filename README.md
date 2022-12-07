@@ -1,2 +1,2 @@
 # Javascript
-* Meus estudos
+* Resumão Javascript
