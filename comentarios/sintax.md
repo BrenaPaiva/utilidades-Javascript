@@ -250,3 +250,102 @@ let number = 1
 //único caso em que tenho 3 expressões para que se defina alguma coisa no final das contas
 console.log( true ? 'alo' : 'nada')
 ```
+* New(Novo objeto)
+```js
+ // left-hand-side expression
+// apenas uma expressão que serve para criar um novo objeto
+        let name = new String('Brena') // a String é uma cadeia de caracteres
+        name.surName = 'Paiva'
+        let age = new Number(22)
+        console.log(name.surName, age)
+        let date = new Date('2022-12-07')
+        console.log(date)
+```
+# Typeof delete
+* Operadores unários
+```js
+    
+const pessoa ={
+    name: 'Brena',
+    color: 'red',
+    tom: 25
+}   
+    //meu delete deleta a propriedade do meu objeto, desde que ela exista é claro
+        delete pessoa.color
+console.log(pessoa)
+```
+# Operadores aritiméticos
+
+* Multiplicação
+```js
+    console.log(3 * 15.5)
+```
+* Divisão
+```js
+    console.log(12/2)
+```
+* Soma
+```js
+    console.log(34 + 67)
+```
+* Subtração
+```js
+    console.log(3 - 15)
+```
+
+* Resto da divisão
+```js
+   let remainder
+   remainder = 11 % 3
+   console.log(remainder)
+```
+* Incremento
+```js
+   let increment = 0
+   increment++
+   console.log(increment)
+```
+* Decremento
+```js
+   //funciona igual o outro
+   let decrement = 0
+   console.log(--decrement)
+```
+* Exponencial
+```js
+    console.log(3 ** 3)
+```
+### Grouping operator
+```js
+    let total = (2 + 3) * 5
+    console.log(total)
+``` 
+## Operadores de comparação
+* Igual a e diferente de
+```js
+    1
+let two = 2
+ // == igual a
+ console.log(two == 2)
+ console.log(one == "1")
+ // != diferente de
+ console.log(one != two)
+ console.log(one != 1)
+ console.log(one != "1")
+```
+### Operadores de comparação estritamente igual a e estritamente diferente
+```js
+    let one = 1
+    let two = 2
+    // === estritamente ou seja, completamente igual a
+    console.log(one === "1") //este campo será falso
+    console.log(one === 1) //este campo será verdadeiro
+```
+* Quando adicionamos um número string "1" e concatena ele + com um número que não é string 1, o javascript vai entender que eu quero juntar os número e logo ele não será somado, seu valor será 11
+
+```js
+    // !== estritamente diferente de 
+    console.log(two !== "2") // true (este campo pe verdadeiro porque o nosso número não é uma string)
+    console.log(two !== 2) //false
+```
+### Operadores de comparação maior e menor(igual)
