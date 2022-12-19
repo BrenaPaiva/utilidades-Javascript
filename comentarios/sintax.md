@@ -393,3 +393,71 @@ let two = 2
 
     console.log({} ? 'verdadeiro' : 'falso')
     ```
+## Controle de fluxo da aplicação
+```js
+
+    //  if e else
+    //básico
+    let temperature =  36.9;
+    let hightTemperature = temperature >= 38.5
+    let mediumTemperature = temperature >= 37  
+
+    if(hightTemperature){
+        console.log('febre alta')
+    }else if(mediumTemperature){ 
+        console.log('febre moderada')
+    }else{
+        console.log('Saudavel')
+    }
+
+    //switch
+    //dar para criar muitos casos dependendo da necessidade
+    //calculadora
+     function calculadora(number1, operator, number2){
+       let result 
+        switch(operator){
+            case '+': 
+            result = number1 + number2
+            break
+            case '-': 
+            result = number1 - number2
+            break
+            case '/': 
+            result = number1 / number2
+            break
+            case '*': 
+            result = number1 * number2
+            break  
+            default:
+            console.log('não implementado')
+            break   
+        }
+
+       return result
+     }
+
+     console.log(calculadora(9, '%', 9))    
+
+```
+
+## Throw e try catch
+```js
+//  throw(disparar ou lançar) e try(tentar) catch(pegar)
+    function sayMyName(name ='Brena'){
+        if(name === ''){
+            throw 'Nome é obrigatório'
+        }
+
+        console.log(name)
+    }
+        
+    try{
+        //função de erro
+        sayMyName()
+    }catch(e){
+        //captura do erro
+        console.log(e)
+    }
+
+    console.log('após ao try catch  ')
+```
