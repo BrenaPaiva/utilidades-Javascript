@@ -486,3 +486,4 @@ let two = 2
         console.log(person[property])
     }
 ```
+## Consolidando com exercícios
