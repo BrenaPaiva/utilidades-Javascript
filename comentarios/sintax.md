@@ -348,4 +348,48 @@ let two = 2
     console.log(two !== "2") // true (este campo pe verdadeiro porque o nosso número não é uma string)
     console.log(two !== 2) //false
 ```
-### Operadores de comparação maior e menor(igual)
+### Operadores lógicos
+```js
+//Operadores lógicos
+    let pao = false;
+    let queijo = false;
+
+    // AND &&
+     console.log(pao && queijo)
+    //OR ||
+     console.log(pao || queijo)
+
+    //NOT !
+    // como se fosse uma lampada, liga/desliga
+    console.log(!pao)
+```
+###  Falsy e truthy
+    * Falsy: quando um valor é considerado false em contextos onde um booleano é obrigatório(condicionais e loops)
+
+    ```js
+    false
+    0
+    -0
+    ""
+    null
+    undefined
+    NaN
+
+    console.log(true ? 'verdadeiro' : 'falso')
+    ```
+    * Truthy: Quando um valor é considerado true em contextos onde um booleno é obrigatório(condicionais e loops)
+
+    ```js
+    true
+    []
+    {}
+    1
+    3.23
+    "0"
+    "false"
+    -1
+    Infinity
+    -Infinity
+
+    console.log({} ? 'verdadeiro' : 'falso')
+    ```
