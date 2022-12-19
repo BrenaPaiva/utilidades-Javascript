@@ -461,3 +461,28 @@ let two = 2
 
     console.log('após ao try catch  ')
 ```
+
+## Estrutura de repetição
+```js
+
+    //for of
+    //Criará o loop através de alguma variavel
+    let nam = 'Brena';
+    let names = ['Ana', 'Maria','Braga']
+    for(let name of nam){
+        console.log(name)
+    }
+
+
+    //for in
+    //Criará um loop em cima de um objeto
+    let person = {
+        name:  'Ana',
+        age: 22,
+        wheight: 54.9
+    }
+    for(let property in person){
+        console.log(property)
+        console.log(person[property])
+    }
+```

@@ -105,3 +105,48 @@
     }
 
     console.log('após ao try catch  ')
+
+    // estruturas de repetição
+    //for
+    //break - para a execução do loop
+    // continue - pula a execução do momento
+
+    // for(i = 100; i > 0; i--){
+    //     if(i === 5){
+    //         continue;
+    //         // break;
+    //     }
+    //     console.log(i)
+    // }
+
+    // while
+
+    let i = 10395;
+    // O while vai ficar dividindo até o momento em que o i for maior que 10
+    while(i > 10){
+        //Quando não sabemos o momento da parada, geralmente usamos o while
+        console.log(i);
+
+        i /= 35;
+    }
+
+    //for of
+    //Criará o loop através de alguma variavel
+    let nam = 'Brena';
+    let names = ['Ana', 'Maria','Braga']
+    for(let name of nam){
+        console.log(name)
+    }
+
+
+    //for in
+    //Criará um loop em cima de um objeto
+    let person = {
+        name:  'Ana',
+        age: 22,
+        wheight: 54.9
+    }
+    for(let property in person){
+        console.log(property)
+        console.log(person[property])
+    }
