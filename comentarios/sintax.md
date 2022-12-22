@@ -23,7 +23,7 @@ Toda linguagem tem uma boa comunicação e necessita de uma boa sintaxe
  ## Primitivo e estrutural
  * null(caixa vazia)
 # Variáveis 
-* Nomes simb[olicos para receber algum valor
+* Nomes simbbolicos para receber algum valor
 * atalhos de código
 * identificadores
 * 3 palavras reservadas para criar uma variável
@@ -97,7 +97,7 @@ Parei em revisão de objects no módulo praticando e avançando
 ## function scope
 ```js
 let subject
-function createThing(subject){
+function createThink(subject){
     return subject
 }
 console.log(createThink(subject))
@@ -487,3 +487,4 @@ let two = 2
     }
 ```
 ## Consolidando com exercícios
+* Resolvendo a complexidade dos exercicios
