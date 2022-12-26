@@ -7,47 +7,88 @@
     mostrar uma mensagem se a família está com saldo positivo ou negativo, seguido do valor do saldo
 */
 
+let familia = {
+    receitas: [3450, 1300, 1450, 300],
+    despesas: [600, 117, 185, 90, 115]
+}
+
+function soma(array){
+    let soma = 0;
+    for(let value of array){
+        soma += value;
+    }
+    // console.log(soma);
+    return soma;
+}
+
+function calc(){
+    const calculaReceitas = soma(familia.receitas);
+    const calculaDespesas = soma(familia.despesas);
+    const total = calculaReceitas - calculaDespesas;
+        // console.log(total);
+    
+    const itsOk = total >= 0
+    let balance = "Negativo";
+    
+    if(itsOk){
+        balance = "Positivo"
+    } document.write(`Seu saldo é ${total.toFixed(2)}, e ele está ${balance}`);
+
+
+    
+}
+calc()
+
 /////////////Forma explicada
 
-let familia = {
-    receitas: [300.33367],
-    despesas: [120, 87, 90, 115, 900]
-}
+// let familia = {
+//     receitas: [300.33367],
+//     despesas: [120, 87, 90, 115, 900]
+// }
 
 
 
-function sum(array){
- let total = 0;
+// function sum(array){
+//  let total = 0;
  
- for(let value of array) {
-    total += value
+//  for(let value of array) {
+//     total += value
 
- }
- return total 
-}
+//  }
+//  return total 
+// }
 
-function calcular(){
-    const calculaSaldo = sum(familia.receitas)
-    const calculaDespesas = sum(familia.despesas)
+// function calcular(){
+//     const calculaSaldo = sum(familia.receitas)
+//     const calculaDespesas = sum(familia.despesas)
 
-    const total = calculaSaldo - calculaDespesas
+//     const total = calculaSaldo - calculaDespesas
 
-    const itsOk = total >= 0
+//     const itsOk = total >= 0
 
-    let balanceText = "Negativo"
-    if(itsOk){
-        balanceText = "Positivo"
+//     let balanceText = "Negativo"
+//     if(itsOk){
+//         balanceText = "Positivo"
 
-    }
-    console.log(`Seu saldo é R$${total.toFixed(2)}, e ele está ${balanceText}`)
-}
-calcular()
+//     }
+//     console.log(`Seu saldo é R$${total.toFixed(2)}, e ele está ${balanceText}`)
+// }
+// calcular()
  
+
+
+
+
+
+
+
+
+
 
 
 // let familia = {
-//     receitas: [300],
-//     despesas: [120, 87, 90, 115, 900]
+//     receitas: [300, 3000],
+//     despesas: [120, 87, 90, 900]
 // }
 
 

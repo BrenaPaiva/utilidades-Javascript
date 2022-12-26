@@ -1,23 +1,36 @@
+//Crie uma função que receba uma string em celsius ou farenheint e faça a conversão
+// F = C * 9/5 + 32
+// C = (F - 32) * 5/9;
+
 function transform(degree){
-    const celsiusExists = degree.toUpperCase().includes('C');
-    const fahrenheitExists = degree.toUpperCase().includes('F');
+    const celsiusExist = degree.toUpperCase().includes("C");
+    const farenheintExist = degree.toUpperCase().includes("F");
 
-    if(!celsiusExists && !fahrenheitExists){
-        throw new Error("Celsius or Fahrenheit must be entered");
+        //erro    
+    if(!celsiusExist && !farenheintExist){
+        throw new Error("Grau inválido");
     }
-    //fluxo ideial, F > C
-    let updatedDegree = degree.toUpperCase().replace("F", "");
+    let updatedDegree = Number(degree.toUpperCase().replace("F", ""));
 
-    let formula = farenheit => (farenheit - 32) * 5/9
+    let formula = (farenheint) => (farenheint - 32) * 5/9;
     let degreeSign = 'C'
 
-    return formula(updatedDegree) + degreeSign
-}
+    if(celsiusExist){
+        updatedDegree =  Number(degree.toUpperCase().replace("C", ""));
+        formula = celsius => celsius * 9/5 + 32;
+        degreeSign = 'F';
+    }
+
+    return formula(updatedDegree) + degreeSign;    
+ }
+
 try{
-    transform('50F');
-    transform('50Z');
+     console.log(transform('50f'))
+     console.log(transform('50C'))
+    //  console.log(transform('30C'))
+     transform('50G')
 }catch(e){
-    console.log(e.message);
+ console.log(e.message);
 
 }
 

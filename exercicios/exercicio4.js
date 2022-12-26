@@ -7,12 +7,13 @@ Baseado no array de livros por categoria abaixo, faça os seguintes desafios
     * Transformar a função acima em uma função que irá receber o nome do autor e devolver os livros desse autor
 */
 
+
 const booksByCategory = [
     {
         category: 'Riqueza',
         books: [
             {
-                title: "Os segredos da mente milionária",
+                title: "Melhorando os hábitos",
                 author: "T. Harv Eker"
             },
             {
@@ -39,31 +40,60 @@ const booksByCategory = [
             {
                 title: "Os 7 hábitos das pessoas altamente eficazes",
                 author: "Stephen Covey"
+            },
+            {
+                title: "Mais esperto que o Diabo",
+                author: "S. George Clason"
+
             }
         ],
         },
    
 ]
 
-const totalCategories = booksByCategory.length
-    console.log(totalCategories)
-for(let category of booksByCategory) {
-    console.log("Total de livros da categoria", category.category)
-    console.log(category.books.length)
+const categories = booksByCategory.length
 
+for(let category of booksByCategory){
+    console.log("Total de livros da categoria: ", category.category)
+    console.log(category.books.length)
 }
 
-function countAuthors(){
-    let authors = []
-    for(let category of booksByCategory){
+function booksOfAuthor(author){
+    let books= []
+    
+    for(category of booksByCategory){
         for(let book of category.books){
-            if(authors.indexOf(book.author) == -1){
-                authors.push(book.author)
+            if(book.author === author){
+                books.push(book.title)
             }
-
         }
     }
-    console.log("Total de autores", authors.length)
+    console.log(`Livros do autor ${author}: ${books.join(', ')}`)
+
 
 }
-countAuthors()
+booksOfAuthor('T. Harv Eker')
+
+
+// const totalCategories = booksByCategory.length
+//     console.log(totalCategories)
+// for(let category of booksByCategory) {
+//     console.log("Total de livros da categoria", category.category)
+//     console.log(category.books.length)
+
+// }
+
+// function countAuthors(){
+//     let authors = []
+//     for(let category of booksByCategory){
+//         for(let book of category.books){
+//             if(authors.indexOf(book.author) == -1){
+//                 authors.push(book.author)
+//             }
+
+//         }
+//     }
+//     console.log("Total de autores", authors.length)
+
+// }
+// countAuthors()
