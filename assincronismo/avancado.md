@@ -17,3 +17,5 @@
 * Fulfilled: A promessa foi concluída com sucesso
 * Rejected: A promessa foi rejeitada, houve um erro
 * Settled: Seja com sucesso ou erro, ela foi finalmente concluída
+
+### Promises com fetch
