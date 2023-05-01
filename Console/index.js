@@ -36,3 +36,7 @@ console.log(escola.replace('3', ''))
 //Utilizando regex
 console.log(escola.replace(/\w/g, 'e'))
 console.log('Ana,Maria,Braga'.split('.'))
+
+//Expressões
+const up = texto => texto.toUpperCase()
+console.log(`Ei...${up('cuidado')}!`)
