@@ -17,7 +17,7 @@
 // console.log(0.1 + 0.7)
 
 //Usando o Math
-// //Math é um objeto 
+// //Math é um objeto
 // const raio = 5.6
 // const area = Math.PI
 
@@ -144,13 +144,102 @@
 // console.log("valor de i:", i);
 
 //Var em loop
-const funcs = []
+// const funcs = []
 
-for (var i = 0; 1 < 10; i++) {
-  funcs.push(function () {
-    console.log("Valor de i:")
-    console.log(i)
-  })
+// for (var i = 0; 1 < 10; i++) {
+//   funcs.push(function () {
+//     console.log("Valor de i:")
+//     console.log(i)
+//   })
+// }
+// funcs[2]()
+// funcs[8]()
+
+///HOISTING
+// var a;
+// console.log("a =", a);
+
+// /// função
+// class Produto { }
+// console.log(typeof Produto)
+
+// //objeto
+// const estagiaria = {
+//   nome: 'Brena',
+//   idade: 22,
+//   gostos: {
+//     livros: 'romance',
+//     estudar: 'ingles e c#'
+//   }
+// }
+
+// const ob1 = {}
+// ob1.nome = 'Brena';
+// console.log(ob1.nome)
+
+// function Obj(nome) {
+//   this.nome = nome;
+// }
+// const ob2 = new Obj('Freire');
+// const ob3 = new Obj('de Paiva');
+
+// console.log(ob2.nome);
+// console.log(ob3.nome);
+
+// //// PRATICANDO
+// const objeto = {}
+// objeto.nome = "Lapiseira"
+
+// function Obj(nome) {
+//   this.nome = nome;
+// }
+// const objeto2 = new Obj('Caderno');
+// const objeto3 = new Obj('Mochila');
+
+// console.log(objeto2.nome);
+// console.log(objeto3.nome);
+
+
+
+
+
+
+// Você precisa criar um programa que calcule a soma de todos os números
+// entre 1 e um número fornecido pelo usuário, exceto aqueles que são divisíveis por 3.
+
+// var divisivel = {}
+// var numero = parseInt(prompt("Digite um número: "));
+// var soma = 0;
+
+// for (var i = 1; i <= numero; i++) {
+//   if (divisivel && i % 3 === 0) {
+//     continue;
+//   }
+//   soma += i;
+// }
+// console.log("Soma: ", soma);
+
+//DESTRUCTURING
+const pessoa = {
+  nome: 'Brena',
+  idade: '22',
+  endereco: {
+    logradouro: 'Rua Luziania',
+    numero: 26
+  }
 }
-funcs[2]()
-funcs[8]()
+const { nome, idade } = pessoa
+console.log(nome, idade);
+
+//NOMEANDO A ESTRUTURA DO OBJET O PARA EXTRAÇÃO
+const { nome: n, idade: i } = pessoa;
+console.log(n, i);
+
+//DESETRUTURANDO UM OBJETO DENTRO DE OUTRO
+const { endereco: { logradouro, numero } } = pessoa
+console.log(logradouro, numero)
+
+const { endereco: { logradouro: l, numero: u } } = pessoa
+console.log(l, u)
+
+//DESTRUCTURING 02
